@@ -1,0 +1,160 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Part */
+
+nav {
+  background-color: #1abc9c;
+  border-color: #16a085;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 12%;
+}
+
+nav a {
+  color: rgb(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  padding-left: 25px;
+  font-size: 15px;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.623);
+}
+
+#title {
+  padding-right: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+/* Body Part */
+
+body {
+  color: #555;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+main {
+  padding: 50px 0;
+}
+
+/* Posts */
+
+div.posts {
+  background-color: white;
+  margin: 20px 20%;
+  padding: 60px;
+}
+
+p.postTitle{
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+p.postUpDate{
+  font-size: 14px;
+}
+
+.postUpDate span{
+  color: #1abc9c;
+  font-weight: 500;
+}
+
+div.postDescp {
+  display: flex;
+  text-align: justify;
+  padding: 20px 0 10px 0;
+  line-height: 24px;
+  align-items: center;
+}
+
+p.postDescp {
+  padding: 0 30px;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+
+div.readmore{
+  text-align: right;
+}
+
+button.readmore{
+  color: white;
+  margin: auto;
+  padding: 7px 20px;
+  margin-top: 15px;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Footer Part */
+
+.frow {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.fcolumn {
+  width: 33%;
+}
+
+.footer1 {
+  background-color: #2f2f2f;
+  padding: 60px;
+}
+
+.frow {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+footer section h4 {
+  font-size: 19px;
+  padding-bottom: 30px;
+}
+
+.footer2 {
+  text-align: center;
+  background-color: #222222;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+footer section p,
+h4 {
+  color: white;
+}
+
+footer section a,
+b {
+  color: #1abc9c;
+}
+
+footer section p,
+a {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+}

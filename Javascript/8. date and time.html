@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">Date and Time</div>
+      <p>Current Time is <span id="currentTime"></span></p>
+      <script>
+         console.log(new Date()); //This prints the current date.
+
+         console.log(new Date(0)); // This gives the reference date.
+
+         console.log(new Date("2022 - 11 - 21"));
+
+         // Date(Year, month, date, hours, minutes, seconds, milliseconds)
+         let newDate = new Date(
+            2022,
+            10 /* Zero is written for January*/,
+            21,
+            12,
+            55,
+            00,
+            00
+         );
+         console.log(newDate);
+
+         console.log("The year is " + newDate.getFullYear());
+         console.log("The month is " + newDate.getMonth());
+         console.log("The date is " + newDate.getDate());
+
+         //We can change the date using the following syntax.
+         // In example we set the date to 34, which doesn't exist. So the output will be changed to Dec 4.
+         newDate.setDate(34);
+         console.log(newDate);
+
+         console.log(Date.now()); //It gives the timestamp in miiliseconds.
+
+         //Displaying current Time
+         setInterval(() => {
+             let time = new Date();
+            document.getElementById("currentTime").innerHTML =
+               time.getHours() +
+               ":" +
+               time.getMinutes() +
+               ":" +
+               time.getSeconds();
+         }, 1000);
+      </script>
+   </body>
+</html>

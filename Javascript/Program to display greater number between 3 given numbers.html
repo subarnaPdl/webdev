@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">
+         <form action="">
+             <p>First Number</p>
+             <input type="text" id="first_Num" required>
+             
+             <p>Second Number</p>
+             <input type="text" id="second_Num" required>
+            
+            <p>Third Number</p>
+            <input type="text" id="third_Num" required>
+         
+            <input type="button" value=" Check" style="display: block;" onclick=fNum();>
+
+         </form>
+         <p id="result">Result will be displayed here.</p>
+      </div>
+      <script>
+         function fNum() {
+             let fNum= parseInt(document.getElementById("first_Num").value);
+             let sNum= parseInt(document.getElementById("second_Num").value);
+             let tNum= parseInt(document.getElementById("third_Num").value);
+
+             if (fNum > sNum && fNum > tNum){
+                document.getElementById("result").innerHTML= fNum + " is greater.";
+            } else if(sNum > tNum){
+                document.getElementById("result").innerHTML= sNum + " is greater.";
+            }else{
+                 document.getElementById("result").innerHTML= tNum + " is greater.";
+             }
+         };
+
+      </script>
+   </body>
+</html>

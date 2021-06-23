@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h3>Time: <span id="time"></span></h3>
+      <input
+         type="range"
+         id="range"
+         min="0"
+         max="23"
+         value="0"
+         onchange="document.getElementById('time').innerHTML=document.getElementById('range').value;console.log(document.getElementById('time').innerHTML)"
+      />
+      <script>
+         //Range Error
+         var num1 = 21.555;
+         try {
+            num1.toExponential(-2);
+         } catch (err) {
+            console.log(err.name); //Gives the type of error
+            console.log(err.message); //Gives the reason for the error
+         }
+
+         //Reference Error
+         try {
+            var total = num1 + num2; //Here num2 is not declared.
+         } catch (err) {
+            console.log(err.name);
+            console.log(err.message);
+         }
+
+         //Syntax Error
+         try {
+            eval("document.write('Namaste)"); //Here we didn't put ' at the end, so it gave an error message.
+         } catch (err) {
+            console.log(err.name);
+            console.log(err.message);
+         }
+
+         //Type Error
+         try {
+            var text = "Namaste World";
+            var x = text.toFixed(2); //Here toFixed can't be used for string.
+         } catch (err) {
+            console.log(err.name);
+            console.log(err.message);
+         }
+
+         //URI Error
+         try {
+            var x = decodeURI("%E0%A4%A"); //Here wrong URI is given.
+         } catch (err) {
+            console.log(err.name);
+            console.log(err.message);
+         }
+      </script>
+   </body>
+</html>

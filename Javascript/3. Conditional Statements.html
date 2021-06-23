@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <p id="someText"></p>
+      <p id="moreText"></p>
+      <script>
+         let a = prompt("Enter a number:", "");
+
+         //if else function
+         if (a > 0) {
+            document.getElementById("someText").innerHTML =
+               a + " is a positive number.";
+         } else if (a < 0) {
+            document.getElementById("someText").innerHTML =
+               a + " is a negative number.";
+         } else {
+            document.getElementById("someText").innerHTML = a + " is zero.";
+         }
+
+         //switch case function
+         let b = parseInt(a); //parseint is used to convert the string to number
+         switch (b) {
+            case 0:
+               document.getElementById("moreText").innerHTML =
+                  "The number is zero.";
+               break;
+
+            case 1:
+               document.getElementById("moreText").innerHTML =
+                  "The number is one.";
+               break;
+
+            case 2:
+               document.getElementById("moreText").innerHTML =
+                  "The number is two.";
+               break;
+
+            default:
+               document.getElementById("moreText").innerHTML =
+                  "I can't guess the number.";
+               break;
+         }
+      </script>
+   </body>
+</html>

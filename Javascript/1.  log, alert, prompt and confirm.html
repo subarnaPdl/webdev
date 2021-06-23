@@ -1,0 +1,38 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tutorial 1</title>
+   </head>
+   <body>
+      <p id="someText"></p>
+      <p id="postDeleteStatus"></p>
+      <script>
+         // This is how we write comment in Javascript
+
+         //console.log prints the text.
+         console.log("Subarna Poudel");
+
+         //alert is used to produce dialog or a popup.
+         alert("Subarna is warning you for not practising regularly.");
+
+         //prompt is used to produce dialog or a popup which ask some values from the user.
+         // var age = prompt("Enter your age.");
+
+         //we can set the default value like this
+         var age = prompt("Enter your age.", 19);
+         //We have to add certain default value for Internet Explorer. If we don't want to add, we can simply set it blank as
+         // var age = prompt("Enter your age.", "");
+
+         //confirm is used to get the confirmation from the user. It returns either true or false.
+         var deleteStatus = confirm("Do you want to delete the post?");
+
+         //document.getElementById().innerHTML is used to change the values in HTML page dynamically.
+         document.getElementById("someText").innerHTML = "Your age is " + age;
+         document.getElementById(
+            "postDeleteStatus"
+         ).innerHTML = `Post Delete Status =  ${deleteStatus}`;
+      </script>
+   </body>
+</html>

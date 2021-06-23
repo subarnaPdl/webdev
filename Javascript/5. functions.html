@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         let number = prompt("Enter a number: ");
+
+         //Calling the function
+         console.log(checkNumber(number));
+
+         //Executing the function
+         function checkNumber(number) {
+            if (number < 0) {
+               return "Negative Number";
+            } else if (number > 0) return "Postive Number";
+            else {
+               return "Zero";
+            }
+         }
+      </script>
+   </body>
+</html>

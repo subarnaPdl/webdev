@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text = "A a A a";
+         console.log(text); //Original
+         console.log(text.replace(/a/g, "b")); //replaces all but is case sensitive
+         console.log(text.replace(/a/i, "b")); //replaces first only but is case insensitive
+         console.log(text.replace(/a/gi, "b")); //replaces all and is case insensitive
+    </script>
+</body>
+</html>

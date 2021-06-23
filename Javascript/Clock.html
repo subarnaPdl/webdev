@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container">
+          <p id="time">00:00</p>
+          <p id="greet">Good .....</p>
+      </div>
+      <script>
+         var hrs = new Date().getHours();
+         var mins = new Date().getMinutes();
+
+         //am or pm
+         if(hrs<12){
+             var ampm="am";
+         }
+         else{
+             var ampm="pm";
+         }
+
+         //Time
+         document.getElementById("time").innerHTML = hrs%12 + " : " + mins + " " + ampm;
+
+         //Greeting
+         if (hrs < 12) {
+            document.getElementById("greet").innerHTML = "Good Morning";
+         } else if (hrs >= 12 && hrs < 17) {
+            document.getElementById("greet").innerHTML = "Good Afternoon";
+         } else if (hrs >= 17 && hrs < 19) {
+            document.getElementById("greet").innerHTML = "Good Evening";
+         } else {
+            document.getElementById("greet").innerHTML = "Good Night";
+         }
+      </script>
+   </body>
+</html>

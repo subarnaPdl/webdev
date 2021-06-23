@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         //Simple for loop
+         for (let i = 1; i <= 3; i++) {
+            console.log(i);
+         }
+
+         //For loop in arrays
+         let friends = ["Subarna", "Ritesh"];
+
+         //Method 1 of using for loop in arrays
+         for (let i = 0; i < friends.length; i++) {
+            console.log(friends[i]);
+         }
+
+         //Method 2 of using for loop in arrays
+         friends.forEach((element) => {
+            console.log(element);
+         });
+
+         //Method 3 of using for loop in arrays
+         for (element of friends) {
+            console.log(element);
+         }
+
+         //For loop in objects
+         let details = {
+            name: "Subarna Poudel",
+            class: "Bachelor 1st sem",
+            age: 19,
+         };
+
+         for (key in details) {
+            console.log(`The ${key} of employee is ${details[key]}.`);
+         }
+
+         //while loop
+         a = 0;
+         while (a < 3) {
+            console.log(a);
+            a++;
+         }
+
+         //do while loop
+         //in do while loop value is displayed at the first time irrespective of the given condition.
+         b=10;
+         do {
+            console.log(b);
+            b++;
+         } while (b < 13);
+      </script>
+   </body>
+</html>

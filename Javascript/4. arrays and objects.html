@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         //Arrays
+         console.log("Arrays");
+
+         // let details = ["Subarna Poudel", 19, 100, "Ratnanagar-13, Chitwan"];
+         //Or
+         let details = new Array("Subarna Poudel", 19, 100);
+         details.unshift("Hello"); // It adds the data to the begining of the array.
+         details.push("Ratnanagar-13, Chitwan"); //It adds the data at the ending of the array
+         console.log(details);
+         console.log(details[3]);
+         console.log(details.join(","));
+         console.log("Index of 19 is " + details.indexOf(19));
+
+         //Objects
+         console.log("Objects");
+         let employee = {
+            name: "Subarna Poudel",
+            class: 13,
+            roll: 1,
+            hobbies: ["coding", "travelling"],
+            //We can store a function as data in an object.
+            showName: function () {
+               console.log("Name is " + this.name);
+            },
+         };
+         employee.showName();
+         console.log("Class is " + employee.class);
+         console.log(employee["hobbies"][1]);
+
+         console.log("String to array");
+         var string = "My name is Subarna Poudel";
+         var arr = string.split(" ");
+         console.log(arr);
+      </script>
+   </body>
+</html>
